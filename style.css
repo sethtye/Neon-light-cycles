@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #06060e;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.game-container {
+    position: relative;
+    border: 3px solid #00ffcc;
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.2);
+    background-color: #000;
+}
+
+canvas {
+    display: block;
+    background-color: #000;
+}
+
+.score-board {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.player1-score { color: #ff00ff; text-shadow: 0 0 10px #ff00ff; }
+.player2-score { color: #00ffff; text-shadow: 0 0 10px #00ffff; }
+
+.instructions-panel {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: opacity 0.5s ease;
+}
+
+.control-group {
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.p1 { border: 1px solid #ff00ff; color: #ff00ff; }
+.p2 { border: 1px solid #00ffff; color: #00ffff; }
+
+.goal {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: #00ffcc;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.message-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 15px #00ffcc;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px 40px;
+    border: 2px solid #00ffcc;
+    z-index: 20;
+    text-align: center;
+    cursor: pointer;
+}

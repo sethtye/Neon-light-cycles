@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Light Cycles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="scoreBoard" class="score-board">
+            <span id="player1Score" class="player1-score">P1: 0</span>
+            <span id="player2Score" class="player2-score">P2: 0</span>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="instructions" class="instructions-panel">
+            <div class="control-group p1">
+                <h3>PLAYER 1</h3>
+                <p>W - A - S - D</p>
+            </div>
+            <div class="control-group p2">
+                <h3>PLAYER 2</h3>
+                <p>ARROW KEYS</p>
+            </div>
+            <p class="goal">Avoid trails. Music starts on ENTER.</p>
+        </div>
+        <div id="messageDisplay" class="message-display">Press ENTER to Start!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
